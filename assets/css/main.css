@@ -263,7 +263,7 @@ footer {
     text-decoration: none;
     font-family: 'Satoshi', Arial, sans-serif;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1vw;
     padding: 0;
     display: flex;
     align-self: flex-start;
@@ -390,10 +390,10 @@ footer .footer_main .footer_contact .footer_contact-email {
 /* Mobile design adjustments (less than 880px) */
 @media (max-width: 1000px) {
     .content-quote h1 {
-        font-size: 7vw !important; /* Adjust as needed for mobile */
+        font-size: 5.6vw !important; /* Adjust as needed for mobile */
     }
     .content-quote h2 {
-        font-size: 12vw !important;
+        font-size: 10vw !important;
         margin-left: 40vw !important; /* Adjust as needed for mobile */
     }
     main .content {
