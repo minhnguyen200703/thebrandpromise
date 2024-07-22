@@ -15,6 +15,13 @@
 
 @font-face {
     font-family: 'Satoshi';
+    src: url('../font/Satoshi-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
     src: url('../font/satoshi_viet/MJ Satoshi-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
@@ -95,15 +102,15 @@ nav .nav_buttons li {
 }
 
 nav .nav_buttons li .nav_buttons-search{
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-weight: 300;
 }
 
 nav .nav_buttons li a {
-    color: white;
+    color: #EFE4D2;
     text-decoration: none;
     font-family: 'Satoshi', Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 
 }
 
@@ -121,20 +128,24 @@ nav .nav_buttons li {
     height: 100%;
     z-index: 20;
     overflow: hidden;
-    background: black;
+    background: transparent;
 }
 
 .hero video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 2s ease;
+    transition: all 0.5s ease, opacity 0.1s ease; /* Adjusted to include opacity */
+}
+
+.hero video.fade-out {
+    opacity: 0; /* Define opacity for the fade-out effect */
 }
 
 main {
     padding: 20px;
-    margin-top: 5vh;
-    height: 70vh;
+    margin-top: 3ch;
+    height: 73vh;
     text-align: center;
     background: #EFE4D2;
     display: flex;
@@ -143,7 +154,8 @@ main {
 }
 
 main .content {
-    width: 70vw;
+    /* Middle range - Adjust font size accordingly to vw */
+    width: 50vw; 
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -156,10 +168,10 @@ main .content .content-sign {
     justify-content: start;
 }
 
-main .content .content-sign h1{
-    font-size: 5rem;
-    margin: 0;
-    margin-bottom: 0.5rem;
+main .content .content-sign img{
+    width: 200px;
+    /* height: 102px; */
+    margin-left: -5vw;
 }
 
 main .content .content-quote {
@@ -170,7 +182,7 @@ main .content .content-quote {
 main .content .content-quote div{
     display: flex;
     flex-direction: row;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     align-items: flex-end;
 }
 
@@ -179,7 +191,7 @@ main .content .content-quote div h1{
     text-decoration: none;
     font-family: 'Chapaza', Arial, sans-serif; 
     font-weight: 500;
-    font-size: 3.75rem;
+    font-size: 4rem;
     margin: 0;
 }
 
@@ -188,10 +200,10 @@ main .content .content-quote div h2{
     text-decoration: none;
     font-family: 'ShelleyAndanteBT', Arial, sans-serif;
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 5rem;
     font-style: italic;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 1.875rem;
 
 }
 
@@ -202,15 +214,15 @@ main h1 {
 }
 
 footer {
-    width: 100%;
-    height: 17vh;
+    /* width: 100%; */
+    height: 18vh;
     background: black;
     color: #EFE4D2;
     text-align: center;
     padding: 20px;
     position: relative;
     bottom: 0;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -224,8 +236,15 @@ footer {
     margin-top: 3vh;
 }
 
-.footer_main div{
-    margin-right: 7vh;
+.footer_language {
+    margin-right: 5vh;
+    margin-top: 3vh;
+}
+
+.footer_main .footer_at,
+.footer_main .footer_socials,
+.footer_main .footer_contact {
+    margin-right: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -234,16 +253,16 @@ footer {
 .footer_at {
     text-decoration: none;
     font-family: 'Satoshi', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
 }
 
 .footer_socials-content, .footer_contact-header {
     text-decoration: none;
     font-family: 'Satoshi', Arial, sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.4rem;
     padding: 0;
     display: flex;
     align-self: flex-start;
@@ -253,43 +272,55 @@ footer {
 
 
 .footer_socials-icons {
-
+    margin-left: -0.25rem;
 }
 
 .footer_socials-icons ul {
     list-style: none;
     display: flex;
     margin: 0;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     padding: 0;
 }
 
 
 .footer_socials-icons ul li{
-    margin-right: 0.8rem;
-    margin-top: 0.2rem;
+    /* margin-right: 0.8rem; */
+    /* margin-top: -0.2rem; */
 
 }
 
-.footer_socials-icons ul li a i{
-    font-size: 32px;
-    color: #EFE4D2;
+.footer_socials-icons ul li a img{
+    width: 2.6rem;
+    /* height: 2.125rem; */
 }
 
-.footer_contact-address {
+footer .footer_main .footer_contact .footer_contact-address,
+footer .footer_main .footer_contact .footer_contact-email {
     display: flex;
     flex-direction: row;
 }
 
-.footer_contact-address i{
+.footer_contact-address i, .footer_contact-email i{
+    margin-right: 8px;
+    font-size: 20px;
     
 }
 
-.footer_contact-address p{
-    
+
+.footer_contact-address p, .footer_contact-email p{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.6px;
+    font-family: 'Satoshi', Arial, sans-serif;
 }
 
-
+.footer_contact-header {
+    margin-bottom: 14px;
+}
 
 
 
@@ -305,3 +336,70 @@ footer {
     display: none;
 }
 
+.footer_language button{
+    
+}
+
+
+.footer_language {
+    position: relative;
+    display: inline-block;
+}
+.footer_language button {
+    background-color: transparent;
+    color: #e0d8cd;
+    border: 0.6px solid #EFE4D2;
+    padding: 10px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5.313rem; /* Adjusted width */
+    height: 1.875rem; /* Adjusted height */
+}
+.footer_language button:focus {
+    outline: none;
+}
+.footer_language-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.footer_language-content a {
+    color: #EFE4D2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.footer_language-content a:hover {
+    background-color: #575757;
+}
+.footer_language:hover .footer_language-content {
+    display: block;
+}
+.footer_language:hover button {
+    background-color: #575757;
+}
+
+
+/* Responsive - Web */
+
+@media (max-width: 1700px) and (min-width: 880px) {
+    .content-quote h1 {
+        font-size: calc(4.5rem - (1vw * (4.5 - 2) / (880 / 2))) !important; /* Adjust scale factor */
+    }
+    .content-quote h2 {
+        font-size: calc(6rem - (1vw * (6 - 2.5) / (880 / 2))) !important; /* Adjust scale factor */
+    }
+}
+
+/* Responsive - Mobile */
+
+/* Mobile design adjustments (less than 880px) */
+@media (max-width: 880px) {
+    /* You will define your mobile design here later */
+}
