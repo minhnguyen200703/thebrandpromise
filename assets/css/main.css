@@ -469,7 +469,7 @@ footer .footer_main .footer_contact .footer_contact-email {
 
 body.hidden-content main, body.hidden-content footer, body.hidden-content header {
     opacity: 0;
-    transition: opacity 0.7s ease;
+    transition: opacity 4s ease;
 }
 
 /* Class to show the content */
