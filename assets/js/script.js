@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var heroSection = document.getElementById('hero');
 
     heroVideo.addEventListener('ended', function () {
-        // Apply the circular shrink and fade-out animation
-        heroVideo.classList.add('circular-shrink-fade');
+        // Apply the fade-out animation
+        heroVideo.classList.add('fade-out');
 
-        // Hide the video after the animation completes
+        // Hide the video after the fade-out animation completes
         setTimeout(() => {
             heroVideo.classList.add('hidden');
             heroSection.style.zIndex = -1;
-        }, 700); // Duration of the animation (0.7s)
+        }, 1000); // Duration of the fade-out animation (0.7s)
     });
 });

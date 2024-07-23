@@ -446,23 +446,6 @@ footer .footer_main .footer_contact .footer_contact-email {
 
 /* Add this to your existing CSS */
 
-@keyframes peelOff {
-    0% {
-        opacity: 1;
-        transform: rotateY(0deg) translateX(0) translateY(0);
-        transform-origin: top right;
-    }
-    50% {
-        opacity: 0.7;
-        transform: rotateY(-60deg) translateX(-50%) translateY(-50%);
-        transform-origin: top right;
-    }
-    100% {
-        opacity: 0;
-        transform: rotateY(-120deg) translateX(-100%) translateY(-100%);
-        transform-origin: top right;
-    }
-}
 
 @keyframes fadeOut {
     from {
@@ -473,27 +456,11 @@ footer .footer_main .footer_contact .footer_contact-email {
     }
 }
 
-@keyframes circularShrinkFade {
-    0% {
-        opacity: 1;
-        clip-path: circle(100%);
-    }
-    100% {
-        opacity: 0;
-        clip-path: circle(0%);
-    }
-}
 
-.hero video.circular-shrink-fade {
-    animation: circularShrinkFade 0.7s ease forwards;
-}
 
-.hero video.peel-off {
-    animation: peelOff 1.5s ease forwards;
-}
 
 .hero video.fade-out {
-    animation: fadeOut 0.7s ease forwards;
+    animation: fadeOut 1s ease forwards;
 }
 
 .hidden {
