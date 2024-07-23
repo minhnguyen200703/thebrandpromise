@@ -464,8 +464,36 @@ footer .footer_main .footer_contact .footer_contact-email {
     }
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes circularShrinkFade {
+    0% {
+        opacity: 1;
+        clip-path: circle(100%);
+    }
+    100% {
+        opacity: 0;
+        clip-path: circle(0%);
+    }
+}
+
+.hero video.circular-shrink-fade {
+    animation: circularShrinkFade 0.7s ease forwards;
+}
+
 .hero video.peel-off {
     animation: peelOff 1.5s ease forwards;
+}
+
+.hero video.fade-out {
+    animation: fadeOut 0.7s ease forwards;
 }
 
 .hidden {

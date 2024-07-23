@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var heroSection = document.getElementById('hero');
 
     heroVideo.addEventListener('ended', function () {
-        // Apply the peel-off animation
-        heroVideo.classList.add('peel-off');
+        // Apply the circular shrink and fade-out animation
+        heroVideo.classList.add('circular-shrink-fade');
 
-        // Hide the video after the peel-off animation completes
+        // Hide the video after the animation completes
         setTimeout(() => {
             heroVideo.classList.add('hidden');
             heroSection.style.zIndex = -1;
-        }, 1500); // Duration of the peel-off animation
+        }, 700); // Duration of the animation (0.7s)
     });
 });
