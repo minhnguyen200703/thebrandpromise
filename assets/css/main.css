@@ -466,3 +466,13 @@ footer .footer_main .footer_contact .footer_contact-email {
 .hidden {
     display: none;
 }
+
+body.hidden-content main, body.hidden-content footer, body.hidden-content header {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+/* Class to show the content */
+body.show-content main, body.show-content footer, body.show-content header {
+    display: flex;
+}
