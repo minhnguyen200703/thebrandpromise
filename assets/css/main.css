@@ -422,7 +422,13 @@ footer .footer_main .footer_contact .footer_contact-email {
         flex-direction: column-reverse !important;
         justify-content: center !important;
         align-items: center !important;
+        margin-left: 0;
+        margin-top: 0;
 
+    }
+
+    .footer_main .footer_at, .footer_main .footer_socials, .footer_main .footer_contact {
+margin-right: 0;
     }
 
     .footer_main .footer_at {
