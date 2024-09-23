@@ -1,0 +1,32 @@
+.landing {
+    position: relative;
+    height: 100vh;
+    background: url('../imgs/bakground.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.landing-content {
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.landing-content h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
