@@ -1,3 +1,4 @@
+/* Landing Section */
 .landing {
     position: relative;
     height: 100vh;
@@ -5,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Stack content vertically */
 }
 
 .landing-overlay {
@@ -21,12 +23,16 @@
     z-index: 2;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    align-items: center;
 }
 
-.landing-content h1 {
-    font-size: 4rem;
-    font-weight: 300;
-    text-transform: lowercase;
-    letter-spacing: 2px;
+.font-loop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 

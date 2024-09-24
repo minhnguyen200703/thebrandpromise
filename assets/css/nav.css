@@ -1,0 +1,77 @@
+/* Navbar styling with smoother transitions */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out; /* Longer and smoother transition */
+    transform: translateY(0); /* Start in view */
+    opacity: 1; /* Start fully visible */
+}
+
+header.hidden {
+    transform: translateY(-100%); /* Slide the navbar out of view */
+    opacity: 0; /* Fade out */
+}
+
+header.show {
+    transform: translateY(0); /* Slide the navbar back into view */
+    opacity: 1; /* Fade in */
+}
+
+nav {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav_logo {
+    width: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav .nav_logo .nav_logo-img {
+    width: 3vh;
+    height: 3vh;
+}
+
+nav .nav_buttons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    margin-right: 3rem;
+    padding: 0;
+}
+
+nav .nav_buttons li {
+    margin-left: 1.5rem;
+}
+
+nav .nav_buttons li .nav_buttons-search{
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
+nav .nav_buttons li a {
+    color: #EFE4D2;
+    text-decoration: none;
+    font-family: 'Satoshi', Arial, sans-serif;
+    font-weight: 500;
+
+}
+
+nav .nav_buttons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

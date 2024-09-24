@@ -1,7 +1,7 @@
 /* Font Loop Styles */
 .font-loop {
     position: relative;
-    height: 100px;
+    height: 1rem;
     overflow: hidden;
     width: 500px;
     display: flex;
@@ -32,15 +32,15 @@
 
 .active {
     opacity: 1 !important;
-    top: 0;
+    transform: translateY(0); /* Ensure it's centered */
 }
 
 .fade-out {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(-100%);
 
 }
 
 .hidden {
-    top: -100px;
+    top: 100px;
 }

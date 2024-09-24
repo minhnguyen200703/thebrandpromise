@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/landing.css">
     <link rel="stylesheet" href="./assets/css/fontLoop.css">
+    <link rel="stylesheet" href="./assets/css/whoWeAre.css">
     <link rel="icon" href="./assets/imgs/logo.png">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,28 +17,27 @@
 </head>
 <body>
     <!-- Nav bar -->
-    <header>
+    <header id="navbar">
         <nav>
             <div class="nav_logo">
                 <img src="./assets/imgs/logo.png" alt="Logo" class="nav_logo-img">
             </div>
             
             <ul class="nav_buttons">
-
                 <li><a href="#">
                     <i class="fa fa-align-justify nav_buttons-search"></i>
                 </a></li>
                 <li><a href="#">
                     <i class="fa fa-search nav_buttons-search"></i>
                 </a></li>
-
             </ul>
         </nav>
     </header>
+    
 
 
     <!-- Landing -->
-    <div class="landing">
+    <section class="landing">
         <div class="landing-overlay">
 
         </div>
@@ -48,43 +49,135 @@
                 <div class="font-item font-c">Font C Text</div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!-- Who we are -->
 
+        <section class="who-we-are">
+            <div class="who-content">
+                <h2>( Who we are )</h2>
+                <div class="who-title">
+                    <h1>A <span class="highlight">brand</span> is a promise<br>
+                        A good brand is a <span class="highlight">promise kept</span>.
+                    </h1>
+                </div>
 
+                <div class="who-text">
+                    <div class="vl"></div>
+                    <div class="who-text_content">
+
+                        <p>A strong brand goes beyond making promises; it is about consistently fulfilling them. It builds trust and loyalty by continually exceeding expectations.</p>
+                        <p>Our commitment to evolving quality standards and nurturing communities of like-minded, life-minded, and long-lasting partnerships ensures that every promise made is honored through our dedication to excellence and shared dedication to turn potential into reality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!-- Middle Section -->
+    <section class="landing">
+        <div class="landing-overlay">
 
+        </div>
 
+        <div class="landing-content">
+            <div class="font-loop">
+                <div class="font-item font-a active">Font A Text</div>
+                <div class="font-item font-b">Font B Text</div>
+                <div class="font-item font-c">Font C Text</div>
+            </div>
+        </div>
+    </section>
 
+<!-- Values Section -->
+<section class="values-section">
+    <div class="values-content">
+        <h2>Our Values</h2>
+        <div class="values-list">
+            <div class="value-item">
+                <h3>Integrity</h3>
+                <p>We believe in doing the right thing, even when no one is watching.</p>
+            </div>
+            <div class="value-item">
+                <h3>Innovation</h3>
+                <p>Pushing boundaries and embracing change to stay ahead.</p>
+            </div>
+            <div class="value-item">
+                <h3>Quality</h3>
+                <p>Delivering excellence in every product and service.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Values -->
+<!-- Second Middle Section -->
+<section class="second-middle-section">
+    <div class="second-middle-content">
+        <h2>The Heart of Our Mission</h2>
+        <p>We are driven by a passion to create meaningful experiences and build a community where everyone feels valued and connected.</p>
+    </div>
+</section>
 
+<!-- What We Do Section -->
+<section class="what-we-do">
+    <div class="what-content">
+        <h2>What We Do</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>Consulting</h3>
+                <p>Providing expert advice to help you reach your goals.</p>
+            </div>
+            <div class="service-item">
+                <h3>Design</h3>
+                <p>Creating visually stunning and functional designs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Development</h3>
+                <p>Building solutions that drive business growth.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- Team Section -->
+<section class="team-section">
+    <div class="team-content">
+        <h2>Meet Our Team</h2>
+        <div class="team-members">
+            <div class="member-item">
+                <img src="./assets/imgs/member1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="member-item">
+                <img src="./assets/imgs/member2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Head of Marketing</p>
+            </div>
+            <div class="member-item">
+                <img src="./assets/imgs/member3.jpg" alt="Team Member 3">
+                <h3>Mike Brown</h3>
+                <p>Lead Designer</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- middle section -->
-
-
-    <!-- What we do -->
-
-
-
-
-    <!-- Team -->
-
-
-
-
-    <!-- End -->
-    
+<!-- End Section -->
+<section class="end-section">
+    <div class="end-content">
+        <h2>Thank You for Visiting</h2>
+        <p>We look forward to creating something great with you.</p>
+        <a href="#top" class="back-to-top">Back to Top</a>
+    </div>
+</section>
 
 
 
     <!-- Font loop -->
-     <script src="./assets/js/fontLoop.js">
-        
-     </script>
+     <script src="./assets/js/fontLoop.js"></script>
+     <script src="./assets/js/scroll.js"></script>
+     <script src="./assets/js/nav.js"></script>
+     
 </body>
 </html>
