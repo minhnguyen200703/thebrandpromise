@@ -4,30 +4,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initially show the first font item
     items[currentIndex].classList.add('active');
+    items[currentIndex].style.transform = 'translateY(0)';
+    items[currentIndex].style.opacity = 1;
 
     setInterval(() => {
-        // Remove the active class from the current item and add the fade-out class
+        // Slide out and fade out the current item
         items[currentIndex].classList.remove('active');
-        items[currentIndex].classList.add('fade-out');
+        items[currentIndex].style.transform = 'translateY(-100%)';
+        items[currentIndex].style.opacity = 0;
 
         // Calculate the next index
         currentIndex = (currentIndex + 1) % items.length;
 
-        // Reset all items except the next active one
-        items.forEach((item, index) => {
-            if (index !== currentIndex) {
-                item.style.opacity = 0;
-                item.style.transform = 'translateY(-100%)'; /* Move the item to the top */
-                item.style.top = '-100%'; /* Ensure it's positioned above the view */
-            }
-        });
+        // Prepare the next item to be visible by moving it to the top before sliding it in
+        items[currentIndex].style.transform = 'translateY(100%)';
+        items[currentIndex].style.opacity = 0;
 
-        // Add the active class to the next item and remove the fade-out class
+        // Activate the next item after a slight delay to create the sliding effect
         setTimeout(() => {
             items[currentIndex].classList.add('active');
-            items[currentIndex].classList.remove('fade-out');
-            items[currentIndex].style.transform = 'translateY(0)'; /* Move the item to the center */
-            items[currentIndex].style.top = '0'; /* Ensure it's at the correct position */
-        }, 500); // Ensure fade-out is complete before adding new active
+            items[currentIndex].style.transform = 'translateY(0)';
+            items[currentIndex].style.opacity = 1;
+        }, 1000); // Ensure this matches the transition duration to wait for the fade-out to complete
     }, 3000);
 });
