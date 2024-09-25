@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/landing.css">
     <link rel="stylesheet" href="./assets/css/fontLoop.css">
     <link rel="stylesheet" href="./assets/css/whoWeAre.css">
+    <link rel="stylesheet" href="./assets/css/value.css">
     <link rel="icon" href="./assets/imgs/logo.png">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,7 +37,7 @@
     
 
 
-    <!-- Landing -->
+    <!-- Landing
     <section class="landing">
         <div class="landing-overlay">
 
@@ -49,12 +50,12 @@
                 <div class="font-item font-c">Font C Text</div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Who we are -->
 
-        <section class="who-we-are">
+        <!-- <section class="who-we-are">
             <div class="who-content">
                 <h2>( Who we are )</h2>
                 <div class="who-title">
@@ -72,10 +73,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     <!-- Middle Section -->
-    <section class="landing">
+    <!-- <section class="landing">
         <div class="landing-overlay">
 
         </div>
@@ -87,36 +88,63 @@
                 <div class="font-item font-c">Font C Text</div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 <!-- Values Section -->
 <section class="values-section">
     <div class="values-content">
-        <h2>Our Values</h2>
-        <div class="values-list">
-            <div class="value-item">
-                <h3>Integrity</h3>
-                <p>We believe in doing the right thing, even when no one is watching.</p>
+        <div class="values-content_cont left">
+            <h2 class="values-content_title">Our Values</h2>
+            <div class="values-content_quote">
+                "To deliver quality requires quality to be <span>offered</span>."
             </div>
-            <div class="value-item">
-                <h3>Innovation</h3>
-                <p>Pushing boundaries and embracing change to stay ahead.</p>
-            </div>
-            <div class="value-item">
-                <h3>Quality</h3>
-                <p>Delivering excellence in every product and service.</p>
+        </div>
+        <div class="values-content_cont right">
+
+            <div class="values-list">
+                <div class="value-item">
+                    <h3>Integrity</h3>
+                    <p>We believe in doing the right thing, even when no one is watching.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Innovation</h3>
+                    <p>Pushing boundaries and embracing change to stay ahead.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Quality</h3>
+                    <p>Delivering excellence in every product and service.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Second Middle Section -->
-<section class="second-middle-section">
-    <div class="second-middle-content">
-        <h2>The Heart of Our Mission</h2>
-        <p>We are driven by a passion to create meaningful experiences and build a community where everyone feels valued and connected.</p>
+
+<section class="slider-container">
+    <div class="slider">
+        <div class="slide active">
+            <img src="image1.jpg" alt="Slide 1" class="slide-image">
+            <div class="slide-overlay">
+                <h2 class="slide-caption">Strategic Branding Services</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="image2.jpg" alt="Slide 2" class="slide-image">
+            <div class="slide-overlay">
+                <h2 class="slide-caption">Creative Design Solutions</h2>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="image3.jpg" alt="Slide 3" class="slide-image">
+            <div class="slide-overlay">
+                <h2 class="slide-caption">Marketing Strategies</h2>
+            </div>
+        </div>
     </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
 </section>
+
 
 <!-- What We Do Section -->
 <section class="what-we-do">

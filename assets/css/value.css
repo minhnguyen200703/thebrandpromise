@@ -1,0 +1,63 @@
+.values-section {
+    padding: 100px 0px;
+    background-color: #f7e6e6; /* Light pink background to match your design */
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.values-content {
+    margin-left: 10%;
+    max-width: 80%; 
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+
+.values-content_cont {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.left {
+    flex-grow: 3; /* Left section takes up 3 parts */
+    flex-basis: 0; /* Allow the element to shrink properly */
+}
+
+.right {
+    flex-grow: 1; /* Right section takes up 1 part */
+    flex-basis: 0; /* Allow the element to shrink properly */
+}
+
+.values-content_title {
+
+}
+
+.values-content_quote {
+
+}
+
+.values-list {
+
+}
+
+.value-item {
+
+}
+
+.value-item h3{
+
+}
+.value-item p{
+
+}
+
+
+
+
