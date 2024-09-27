@@ -159,6 +159,19 @@ main .content .content-quote div h2{
 
 }
 
+.shelley {
+    font-family: 'ShelleyAndanteBT', Arial, sans-serif;
+}
+
+.chapaza {
+    font-family: 'Chapaza', Arial, sans-serif; 
+}
+
+.satoshi {
+    font-family: 'Satoshi', Arial, sans-serif;
+
+}
+
 main h1 {
     /* font-size: 2.5rem; */
     /* font-weight: bold; */

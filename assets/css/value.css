@@ -14,8 +14,8 @@
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-    justify-content: space-between;
-
+    justify-content: space-between;                    
+    gap: 10vw; /* Add the gap between left and right containers */
 }
 
 .values-content_cont {
@@ -26,21 +26,37 @@
 
 
 .left {
-    flex-grow: 3; /* Left section takes up 3 parts */
+    flex-grow: 5; /* Left section takes up 3 parts */
     flex-basis: 0; /* Allow the element to shrink properly */
 }
 
 .right {
-    flex-grow: 1; /* Right section takes up 1 part */
+    flex-grow: 2; /* Right section takes up 1 part */
     flex-basis: 0; /* Allow the element to shrink properly */
 }
 
 .values-content_title {
-
+    font-weight: 500;
+    font-size: 40px;
 }
 
 .values-content_quote {
+    font-size: 60px;
+    max-width: fit-content;
+    font-weight: 500;
+    line-height: 1.2; /* Adjust line height for better spacing */
+    text-align: left; /* Ensure the overall text is left-aligned */
+    position: relative; /* Ensure proper positioning */
 
+}
+
+.values-content_quote .qqqq {
+    display: block; /* Make the span a block element */
+    text-align: right; /* Align the span to the right */
+    white-space: nowrap; /* Prevent line break inside the span */
+
+    font-size: 80px;
+    font-weight: 500;
 }
 
 .values-list {
