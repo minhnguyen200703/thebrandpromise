@@ -40,7 +40,7 @@
 }
 
 .values-content_quote {
-    font-size: 60px;
+    font-size: 3.2rem;
     max-width: fit-content;
     font-weight: 500;
     line-height: 1.2; /* Adjust line height for better spacing */
@@ -54,8 +54,9 @@
     text-align: right; /* Align the span to the right */
     white-space: nowrap; /* Prevent line break inside the span */
 
-    font-size: 80px;
+    font-size: 84px;
     font-weight: 500;
+    line-height: 60px;
 }
 
 .values-list {
