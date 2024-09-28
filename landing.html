@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,14 @@
     <link rel="stylesheet" href="./assets/css/fontLoop.css">
     <link rel="stylesheet" href="./assets/css/whoWeAre.css">
     <link rel="stylesheet" href="./assets/css/value.css">
+    <link rel="stylesheet" href="./assets/css/whatwedo.css">
     <link rel="icon" href="./assets/imgs/logo.png">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+
 <body>
     <!-- Nav bar -->
     <header id="navbar">
@@ -23,18 +26,18 @@
             <div class="nav_logo">
                 <img src="./assets/imgs/logo.png" alt="Logo" class="nav_logo-img">
             </div>
-            
+
             <ul class="nav_buttons">
                 <li><a href="#">
-                    <i class="fa fa-align-justify nav_buttons-search"></i>
-                </a></li>
+                        <i class="fa fa-align-justify nav_buttons-search"></i>
+                    </a></li>
                 <li><a href="#">
-                    <i class="fa fa-search nav_buttons-search"></i>
-                </a></li>
+                        <i class="fa fa-search nav_buttons-search"></i>
+                    </a></li>
             </ul>
         </nav>
     </header>
-    
+
 
 
     <!-- Landing
@@ -55,7 +58,7 @@
 
     <!-- Who we are -->
 
-        <!-- <section class="who-we-are">
+    <!-- <section class="who-we-are">
             <div class="who-content">
                 <h2>( Who we are )</h2>
                 <div class="who-title">
@@ -90,8 +93,8 @@
         </div>
     </section> -->
 
-<!-- Values Section -->
-<!-- <section class="values-section">
+    <!-- Values Section -->
+    <!-- <section class="values-section">
     <div class="values-content">
         <div class="values-content_cont left">
             <h2 class="values-content_title shelley"> ( Our Values )</h2>
@@ -120,93 +123,152 @@
     </div>
 </section> -->
 
+    <section class="what-we-do">
+        <div class="    ">
 
-<section class="slider-container">
-    <div class="slider">
-        <div class="slide active">
-            <img src="image1.jpg" alt="Slide 1" class="slide-image">
-            <div class="slide-overlay">
-                <h2 class="slide-caption">Strategic Branding Services</h2>
+            <div class="slider">
+                <div class="slide active">
+                    <img src="./assets/imgs/bakground.jpg" alt="Slide 1" class="slide-image">
+                    <div class="slide-overlay">
+                        <h2 class="slide-caption"></h2>
+                    </div>
+                </div>
+                <!-- <div class="slide">
+                    <img src="image2.jpg" alt="Slide 2" class="slide-image">
+                    <div class="slide-overlay">
+                        <h2 class="slide-caption">content2</h2>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="image3.jpg" alt="Slide 3" class="slide-image">
+                    <div class="slide-overlay">
+                        <h2 class="slide-caption">content3</h2>
+
+                    </div>
+                </div> -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="what-we-do-content">
+            <h2 class="values-content_title shelley"> ( What we do )</h2>
+
+            <div class="what-we-do-title">
+                <h1 class="chapaza">Strategic Branding</h1> <span class="shelley">Services</span>
+            </div>
+            <div class="what-we-do-description">
+                <p>There are various benefits of working with a boutique branding firm such as The Brand Agency. We
+                    bring mindful collaboration through individualized attention, adaptability, creativity, and
+                    specialization to help clients align their unique stories with their long-term aspirations for
+                    meaningful growth.</p>
+                <p>Dedicated to building authentic, compelling personal and corporate brands across digital platforms,
+                    we continue to broaden our expertise beyond hospitality, education, and business advisory services.
+                </p>
+            </div>
+            <div class="what-we-do-services">
+                <div class="services-cont">
+
+                    <div class="service">
+                        <h3>Personal Branding</h3>
+                        <ul>
+                            <li>Visual Identity</li>
+                            <li>Content Creation</li>
+                            <li>Brand Strategy</li>
+                            <li>Online Reputation Management</li>
+                            <li>Thought-leadership Positioning</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h3>Lifestyle Services</h3>
+                        <ul>
+                            <li>Training, Mentoring & Coaching</li>
+                            <li>Event Management</li>
+                            <li>Photography & Videography</li>
+                            <li>Concierge Services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="services-cont">
+                    <div class="service">
+                        <h3>Public Relations</h3>
+                        <ul>
+                            <li>PR & Media Production & Distribution</li>
+                            <li>KOL Management</li>
+                            <li>Media Relations</li>
+                            <li>Corporate Social Value (CSV)</li>
+                            <li>Partnerships & Brand Affairs</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h3>Corporate Branding</h3>
+                        <ul>
+                            <li>Brand Strategy & Positioning</li>
+                            <li>Corporate Identity</li>
+                            <li>Brand Messaging & Communication</li>
+                            <li>Employee & Employer Branding</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="slide">
-            <img src="image2.jpg" alt="Slide 2" class="slide-image">
-            <div class="slide-overlay">
-                <h2 class="slide-caption">Creative Design Solutions</h2>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="image3.jpg" alt="Slide 3" class="slide-image">
-            <div class="slide-overlay">
-                <h2 class="slide-caption">Marketing Strategies</h2>
-            </div>
-        </div>
-    </div>
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
-</section>
+
+    </section>
 
 
-<!-- What We Do Section -->
-<section class="what-we-do">
-    <div class="what-content">
-        <h2>What We Do</h2>
-        <div class="services">
-            <div class="service-item">
-                <h3>Consulting</h3>
-                <p>Providing expert advice to help you reach your goals.</p>
-            </div>
-            <div class="service-item">
-                <h3>Design</h3>
-                <p>Creating visually stunning and functional designs.</p>
-            </div>
-            <div class="service-item">
-                <h3>Development</h3>
-                <p>Building solutions that drive business growth.</p>
+
+
+    <section class="team-section">
+        <div class="team-content">
+            <h2 class="team-title"><span class="shelley">Meet</span> the team</h2>
+            <div class="team-members">
+                <div class="member-item">
+                    <img src="./assets/imgs/camelia.jpg" alt="Camelia Dinh" class="member-photo">
+                    <h3>Camelia Dinh</h3>
+                    <p>Founder and CEO</p>
+                </div>
+                <div class="member-item">
+                    <img src="./assets/imgs/jojo.jpg" alt="Jojo" class="member-photo">
+                    <h3>Jojo</h3>
+                    <p>Executive Assistant</p>
+                </div>
+                <div class="member-item">
+                    <img src="./assets/imgs/khoa.jpg" alt="Khoa" class="member-photo">
+                    <h3>Khoa</h3>
+                    <p>Creative Lead</p>
+                </div>
+                <div class="member-item">
+                    <img src="./assets/imgs/thuy.jpg" alt="Thuy" class="member-photo">
+                    <h3>Thuy</h3>
+                    <p>Project Associate</p>
+                </div>
+                <div class="member-item">
+                    <img src="./assets/imgs/louise.jpg" alt="Louise" class="member-photo">
+                    <h3>Louise</h3>
+                    <p>Project Coordinator</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Team Section -->
-<section class="team-section">
-    <div class="team-content">
-        <h2>Meet Our Team</h2>
-        <div class="team-members">
-            <div class="member-item">
-                <img src="./assets/imgs/member1.jpg" alt="Team Member 1">
-                <h3>John Doe</h3>
-                <p>CEO & Founder</p>
-            </div>
-            <div class="member-item">
-                <img src="./assets/imgs/member2.jpg" alt="Team Member 2">
-                <h3>Jane Smith</h3>
-                <p>Head of Marketing</p>
-            </div>
-            <div class="member-item">
-                <img src="./assets/imgs/member3.jpg" alt="Team Member 3">
-                <h3>Mike Brown</h3>
-                <p>Lead Designer</p>
-            </div>
+    <!-- End Section -->
+    <section class="end-section">
+        <div class="end-content">
+            <h2>Thank You for Visiting</h2>
+            <p>We look forward to creating something great with you.</p>
+            <a href="#top" class="back-to-top">Back to Top</a>
         </div>
-    </div>
-</section>
-
-<!-- End Section -->
-<section class="end-section">
-    <div class="end-content">
-        <h2>Thank You for Visiting</h2>
-        <p>We look forward to creating something great with you.</p>
-        <a href="#top" class="back-to-top">Back to Top</a>
-    </div>
-</section>
+    </section>
 
 
 
     <!-- Font loop -->
-     <script src="./assets/js/fontLoop.js"></script>
-     <script src="./assets/js/scroll.js"></script>
-     <script src="./assets/js/nav.js"></script>
-     
+    <script src="./assets/js/fontLoop.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/slider.js"></script>
+
 </body>
+
 </html>

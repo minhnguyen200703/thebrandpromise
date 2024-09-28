@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
     let scrollThreshold = 50; // Threshold for detecting scroll intent
     let accumulatedScroll = 0; // Tracks how much the user has scrolled
 
+    // Function to check if we're at the top or bottom of the section
+    function isAtSectionEdge(direction) {
+        const section = sections[currentSectionIndex];
+        if (direction === 'down') {
+            return section.scrollHeight - section.scrollTop <= section.clientHeight + 1;
+        } else if (direction === 'up') {
+            return section.scrollTop === 0;
+        }
+        return false;
+    }
+
     // Function to scroll to a specific section
     function scrollToSection(index) {
         if (index >= 0 && index < sections.length) {
@@ -27,6 +38,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         accumulatedScroll += event.deltaY;
 
+        const section = sections[currentSectionIndex];
+
+        // Check if the section is scrollable
+        if (section.scrollHeight > section.clientHeight) {
+            if (accumulatedScroll > 0 && !isAtSectionEdge('down')) {
+                section.scrollTop += event.deltaY;
+                accumulatedScroll = 0; // Reset the accumulated scroll to prevent changing sections
+                return;
+            } else if (accumulatedScroll < 0 && !isAtSectionEdge('up')) {
+                section.scrollTop += event.deltaY;
+                accumulatedScroll = 0; // Reset the accumulated scroll to prevent changing sections
+                return;
+            }
+        }
+
+        // Handle section transitions
         if (accumulatedScroll >= scrollThreshold) {
             // Scroll down to the next section
             currentSectionIndex = Math.min(currentSectionIndex + 1, sections.length - 1);
