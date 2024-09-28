@@ -1,6 +1,5 @@
 .values-section {
     padding: 100px 0px;
-    background-color: #f7e6e6; /* Light pink background to match your design */
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
@@ -31,7 +30,7 @@
 }
 
 .right {
-    flex-grow: 2; /* Right section takes up 1 part */
+    flex-grow: 3; /* Right section takes up 1 part */
     flex-basis: 0; /* Allow the element to shrink properly */
 }
 
@@ -60,7 +59,9 @@
 }
 
 .values-list {
-
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .value-item {
@@ -68,9 +69,12 @@
 }
 
 .value-item h3{
-
+    font-size: 32px;
+    margin-bottom: 12px;
 }
 .value-item p{
+    font-size: 12px;
+    line-height: 14px;
 
 }
 

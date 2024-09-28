@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const section = sections[currentSectionIndex];
 
-        // Check if the section is scrollable
+        // Check if the section is scrollable (i.e., larger than viewport)
         if (section.scrollHeight > section.clientHeight) {
             if (accumulatedScroll > 0 && !isAtSectionEdge('down')) {
                 section.scrollTop += event.deltaY;
@@ -55,13 +55,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Handle section transitions
         if (accumulatedScroll >= scrollThreshold) {
-            // Scroll down to the next section
-            currentSectionIndex = Math.min(currentSectionIndex + 1, sections.length - 1);
-            scrollToSection(currentSectionIndex);
+            if (isAtSectionEdge('down')) {
+                // Scroll down to the next section
+                currentSectionIndex = Math.min(currentSectionIndex + 1, sections.length - 1);
+                scrollToSection(currentSectionIndex);
+            }
         } else if (accumulatedScroll <= -scrollThreshold) {
-            // Scroll up to the previous section
-            currentSectionIndex = Math.max(currentSectionIndex - 1, 0);
-            scrollToSection(currentSectionIndex);
+            if (isAtSectionEdge('up')) {
+                // Scroll up to the previous section
+                currentSectionIndex = Math.max(currentSectionIndex - 1, 0);
+                scrollToSection(currentSectionIndex);
+            }
         }
     }, { passive: false });
 

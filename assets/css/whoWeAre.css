@@ -1,7 +1,7 @@
 /* Who We Are Section */
 .who-we-are {
     padding: 100px 0px;
-    background-color: #f7e6e6; /* Light pink background to match your design */
+    background-color: #fff; /* Light pink background to match your design */
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
@@ -15,26 +15,30 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+    margin-bottom: 30px;
 }
 
 .who-content h2 {
-    font-size: 1.2rem;
+    font-size: 40px;
     font-style: italic;
-    margin-bottom: 20px;
-    color: #a94f4f; /* Darker pink */
+    margin-bottom: 64px;
+    color: #000; /* Darker pink */
+}
+
+.who-title {
+    margin-bottom: 40px;
 }
 
 .who-title h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 500;
     margin-bottom: 20px;
-    color: #333;
+    color: #000;
 }
 
-.highlight {
-    font-style: italic;
-    font-weight: 700;
-    color: #a94f4f; /* Match the pink color */
+.who-title h1 span {
+    font-size: 4.5rem;
+
 }
 
 .who-text {
@@ -49,6 +53,9 @@
 .who-text_content {
     display: flex;
     flex-direction: column;
+    border-left: #000 2px solid;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .who-text_content p {

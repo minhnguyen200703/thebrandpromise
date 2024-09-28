@@ -1,9 +1,9 @@
 /* Font Loop Styles */
 .font-loop {
     position: relative;
-    height: 1rem;
+    height: 4rem;
     overflow: hidden;
-    width: 500px;
+    min-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,19 +16,16 @@
     top: 0;
     opacity: 0;
     transition: all 1s ease;
-    font-size: 1rem;
+    font-size: 4rem;
     /* font-weight: 500; */
     text-transform: lowercase;
     letter-spacing: 2px;
-    font-family: Arial, sans-serif;
     z-index: 10;
     color: white;
 
 }
 
-.font-item.font-a { font-family: 'Times New Roman', serif; }
-.font-item.font-b { font-family: 'Courier New', monospace; }
-.font-item.font-c { font-family: 'Georgia', serif; }
+
 
 .active {
     opacity: 1 !important;
