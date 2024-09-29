@@ -30,8 +30,8 @@
 /* Import the SVN Chapaza fonts */
 @font-face {
   font-family: "Chapaza";
-  src: url("../font/chapaza_viet/SVN-Chapaza-Regular-VIE.otf")
-    format("opentype");
+  src: url("../font/chapaza_viet/Chapaza.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -42,6 +42,8 @@
   font-weight: normal;
   font-style: italic;
 }
+
+
 
 @font-face {
   font-family: "ShelleyAndanteBT";

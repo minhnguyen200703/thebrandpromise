@@ -63,7 +63,7 @@
   position:relative;
   bottom: 52px;
   text-align: right;
-  right: 10px;
+  right: 26px;
 }
 
 .slide-caption {
@@ -123,7 +123,7 @@
 }
 
 .what-we-do-title h1 {
-  font-size: 3.4rem;
+  font-size: 5rem;
   font-weight: 400;
   line-height: 80px;
   text-align: left;
@@ -131,7 +131,7 @@
 
 .what-we-do-title span {
   margin-left: 22px;
-  font-size: 92px;
+  font-size: 6.4rem;
   font-weight: 400;
   line-height: 186.06px;
   text-align: left;
@@ -144,10 +144,11 @@
   gap: 32px;
   position: relative;
   left: 310px;
-  max-width: 528px;
+  max-width: 450px;
   padding-bottom: 50px;
   padding-top: 50px;
-  padding-left: 67px;
+  padding-left: 56px;
+  line-height: 23px;
   border-left: 1.5px solid #000000;
 }
 
@@ -166,7 +167,7 @@
 
 .services-box-count {
   display: flex;
-  gap: 87px;
+  gap: 135px;
   margin-left: 50px;
 }
 
@@ -179,7 +180,7 @@
 
 .service h3 {
   font-family: "Chapaza", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 55.96px;
   text-align: left;
@@ -193,7 +194,7 @@
 
 .service ul li {
   font-family: "Satoshi", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
@@ -342,7 +343,8 @@
 /* Footer */
 
 .footer {
-
+min-height: 100vh;
+background-color: #efe4d2;
 }
 
 
@@ -377,6 +379,7 @@
   line-height: 1.6rem;
   text-align: center;
   padding-bottom: 205px;
+  
 }
 
 .footer-brand {
@@ -411,6 +414,8 @@
   padding: 10px 70px 10px 15px;
   border: 2px solid #eae0d5;
   font-size: 16px;
+  visibility:hidden;
+
 }
 
 
@@ -457,20 +462,20 @@
 }
 
 .menu-options li {
-  font-size: 4rem;
-  font-weight: 600;
-  margin: 1rem 0;
+  font-size: 7rem;
+  font-weight: 500;
+  margin: -20px 0;
 }
 
 .menu-options li a {
-  color: white;
+  color: #efe4d2;
   text-decoration: none;
   font-family: 'YourFontFamily', serif;
 }
 
 .menu-title {
-  font-size: 2.2rem;
-  color: white;
+  font-size: 3rem;
+  color: #efe4d2;
   margin-bottom: 2rem;
 }
 
@@ -490,6 +495,39 @@
 }
 
 
+/* Back to Top Button Styling */
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  right: 20px;  /* Adjust the distance from the right */
+  width: 50px;
+  height: 50px;
+  background-color: #333; /* Circle background color */
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden; /* Hidden by default */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.back-to-top svg {
+  transform: rotate(180deg); /* Rotate the SVG 180 degrees to make it upside down */
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: #555; /* Darken background on hover */
+}
 
 
 

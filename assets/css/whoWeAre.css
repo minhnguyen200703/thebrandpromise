@@ -19,7 +19,7 @@
 }
 
 .who-content h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-style: italic;
     margin-bottom: 64px;
     color: #000; /* Darker pink */
@@ -27,6 +27,7 @@
 
 .who-title {
     margin-bottom: 40px;
+    line-height: 60px;
 }
 
 .who-title h1 {
@@ -37,7 +38,7 @@
 }
 
 .who-title h1 span {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
 
 }
 
@@ -70,4 +71,33 @@
 .vl {
     border-left: 2px solid black;
     height: 100%;
+}
+
+.who-we-are_img {
+    position: relative;
+    top: -446px;
+    right: -60%;
+}
+
+
+.img_plcs {
+    width: 940px;
+    height: 940px;
+    object-fit: cover;
+    opacity: 0.05;
+}
+
+.quote_csss {
+    width: 20px;
+    margin-bottom: 18px;
+    margin-right: 4px;
+}
+
+.quote_sccc {
+    width: 20px;
+    transform: scaleY(-1);
+    transform: scaleX(-1);
+    margin-bottom: 18px;
+    margin-left: -10px;
+
 }
