@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
     items[currentIndex].classList.add('active');
     items[currentIndex].style.transform = 'translateY(0)';
     items[currentIndex].style.opacity = 1;
+    setTimeout(() => {
+       
+    },15000); // Start sliding up and fading out content_1 after 2 seconds
 
     setInterval(() => {
         // Slide out and fade out the current item

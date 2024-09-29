@@ -106,41 +106,136 @@ main {
   align-items: center;
 }
 
-main .content {
-  /* Middle range - Adjust font size accordingly to vw */
-  width: 55vw;
+.intro_vid {
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; /* Adjust as needed */
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;left: 0;
+  right: 0;
+  transition: transform 1s ease, opacity 1s ease; /* For scaling and fading */
+  z-index: 1000;
 }
 
-main .content .content-sign {
+
+.content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  width: 100%;
+}
+
+.content_1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.content_1.fade-out {
+  animation: slideUpAndFade 0.5s forwards;
+}
+.content_2 {
+  opacity: 0;
+  transform: translateY(50px); /* Start slightly below */
+  visibility: hidden;
+  margin-bottom: 100px;
+}
+
+.content_2.active {
+  opacity: 1;
+  visibility: visible;
+  animation: slideInUp 0.5s forwards;
+}
+
+@keyframes slideInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideUpOut {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+}
+
+@keyframes slideUpAndFade {
+  0% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-50px); /* Adjust how much it slides up */
+  }
+}
+
+@keyframes scaleDownAndFade {
+  0% {
+      transform: scale(1) translateY(0); /* Start with original size and position */
+      opacity: 1;
+  }
+  100% {
+      transform: scale(0.1) translateY(-90vh); /* Scale down to 30% and move towards top */
+      opacity: 0;
+  }
+}
+
+
+
+.intro_vid.slide-up {
+  animation: scaleDownAndFade 1.5s forwards; /* Apply the scaling down and fading animation */
+}
+.intro_vid.scale-down {
+  animation: scaleDownAndFade 1.5s forwards;
+}
+
+.content .content-sign {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  align-self: self-start;
 }
 
-main .content .content-sign img {
-  width: 200px;
+.content .content-sign img {
+  width: 110px;
   /* height: 102px; */
-  margin-left: -5vw;
+  margin-left: -30px;
 }
 
-main .content .content-quote {
+.content .content-quote {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
 }
 
-main .content .content-quote div {
+.content .content-quote div {
   display: flex;
   flex-direction: row;
   /* margin-left: 3rem; */
   align-items: flex-end;
 }
 
-main .content .content-quote div h1 {
-  color: #000;
+.content .content-quote div h1 {
+  color: #efe4d2;
   text-decoration: none;
   font-family: "Chapaza", Arial, sans-serif;
   font-weight: 500;
@@ -148,12 +243,12 @@ main .content .content-quote div h1 {
   margin: 0;
 }
 
-main .content .content-quote div h2 {
-  color: #000;
+.content .content-quote div h2 {
+  color: #efe4d2;
   text-decoration: none;
   font-family: "ShelleyAndanteBT", Arial, sans-serif;
   font-weight: 300;
-  font-size: calc(5.2vw);
+  font-size: 80px;
   font-style: italic;
   margin: 0;
   margin-left: 1.875rem;
