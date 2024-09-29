@@ -75,14 +75,14 @@
 
 .who-we-are_img {
     position: relative;
-    top: -446px;
-    right: -60%;
+    top: -290px;
+    right: -82%;
 }
 
 
 .img_plcs {
-    width: 940px;
-    height: 940px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     opacity: 0.05;
 }
