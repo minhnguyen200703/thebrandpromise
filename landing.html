@@ -29,7 +29,7 @@
             </div>
 
             <ul class="nav_buttons">
-                <li><a href="#">
+                <li><a id="menu-btn" href="#">
                         <i class="fa fa-align-justify nav_buttons-search"></i>
                     </a></li>
                 <li><a href="#">
@@ -40,6 +40,22 @@
     </header>
 
 
+<!-- Full-screen menu layer -->
+<div id="fullscreen-menu" class="fullscreen-menu">
+    <h2 class="menu-title shelley">( Menu )</h2>
+    <ul class="menu-options chapaza">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="footer-brand layer_bottom">
+        <p class="name-brand">© The Brand Promise 2024</p>
+        <select name="language" id="language" class="custom-select">
+            <option value="VN">VN</option>
+            <option value="EN">EN</option>
+        </select>
+    </div>
+</div>
 
     <!-- Landing -->
     <section class="landing">
@@ -51,7 +67,7 @@
             <div class="font-loop">
                 <div class="font-item chapaza active">the brand promise</div>
                 <div class="font-item satoshi">the brand promise</div>
-                <div class="font-item shelley">the brand promise</div>
+                <div style="font-size: 5.6rem;" class="font-item shelley">the brand promise</div>
             </div>
         </div>
     </section>
@@ -129,6 +145,8 @@
                 <div class="slide active">
                     <img src="./assets/imgs/slider-1.jpg" alt="Slide 1" class="slide-image">
                     <div class="slide-overlay">
+                        <h2 class="slide-caption">content asdsads asdasd 2</h2>
+
                     </div>
                 </div>
                 <div class="slide">
@@ -280,6 +298,7 @@
 
     <!-- Section Footer -->
      <section class="footer">
+        
         <div class="footer-company">
             <div class="footer-box-quotes">
                 <p class="footer--quotes">The <span class="shelley">brand</span> is a promise.</p>
@@ -301,12 +320,12 @@
 
 
 
-
     <!-- Font loop -->
     <script src="./assets/js/fontLoop.js"></script>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/nav.js"></script>
     <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/menu.js"></script>
 
 </body>
 
