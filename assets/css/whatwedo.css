@@ -476,6 +476,19 @@
 
 
 
+/* Initial state: elements are hidden and positioned lower */
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.8s ease, transform 1.8s ease;
+}
+
+/* When elements are visible, slide them into place */
+.slide-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
