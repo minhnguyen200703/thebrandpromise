@@ -1,0 +1,68 @@
+.main_contact {
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.contact_title {
+
+}
+
+.contact_title h1 {
+    font-size: 5.6rem;
+}
+
+.contact_point {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.contact_point div {
+    
+}
+
+.contact_email {
+
+}
+
+.contact_email span, .contact_somed span {
+    display: inline-block; /* Ensures span acts as a block for the border */
+    width: 300px; /* Sets the width of the border */
+    border-bottom: 1px solid #000; 
+    margin-bottom: 5px;
+}
+
+.contact_email h3 {
+    font-size: 14px;
+}
+
+.contact_somed {
+
+}
+
+.contact_icons {
+
+}
+
+.contact_icons a {
+    text-decoration: none;
+    margin-right: -4px;
+}
+
+.contact_icons a img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
