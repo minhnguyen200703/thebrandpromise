@@ -56,13 +56,13 @@
 body {
   height: 100vh;
   overflow-y: scroll; /* Ensure the body is scrollable */
-  scroll-snap-type: y mandatory; /* Enable vertical snap scrolling */
-  scroll-behavior: smooth; /* Smooth transition between snap points */
+  /* scroll-snap-type: y mandatory; /* Enable vertical snap scrolling */
+  /* scroll-behavior: smooth; Smooth transition between snap points */ 
 }
 
 section {
-  min-height: 100vh; /* Ensure each section takes the full viewport height */
-  scroll-snap-align: start; /* Snap to the start of each section */
+  margin-bottom: 40px; /* Ensure each section takes the full viewport height */
+  /* scroll-s nap-align: start; Snap to the start of each section */
 }
 
 body,

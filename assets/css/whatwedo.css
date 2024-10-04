@@ -5,7 +5,7 @@
   margin-top: 10px; /* Position it to overlap with the overlay */
   background-color: white; /* Ensure a contrasting background */
   border-radius: 0 45px 45px 45px;
-  padding: 100px 10%;
+  padding: 100px 10% 0;
   /* box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -400,8 +400,8 @@ justify-content: space-between; /* Push the .footer-brand to the bottom */
 
 .name-brand {
   font-family: "Satoshi", Arial, sans-serif;
-  font-size: 23px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 31.05px;
   text-align: left;
   color: #efe4d2;
@@ -494,7 +494,7 @@ justify-content: space-between; /* Push the .footer-brand to the bottom */
 .slide-up {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1.8s ease, transform 1.8s ease;
+  transition: opacity 3s ease, transform 3s ease;
 }
 
 /* When elements are visible, slide them into place */

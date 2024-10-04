@@ -36,14 +36,14 @@ nav {
 }
 
 nav .nav_logo {
-    width: 3vh;
+    width: 3.4vh;
     display: flex;
     justify-content: center;
 }
 
 nav .nav_logo .nav_logo-img {
-    width: 3vh;
-    height: 3vh;
+    width: 3.4vh;
+    height: 3.4vh;
 }
 
 nav .nav_buttons {
