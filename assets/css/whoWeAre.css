@@ -10,8 +10,8 @@
 }
 
 .who-content {
-    margin-left: 10%;
-    max-width: 900px; /* Limit the width of the content */
+    margin-left: 15%;
+    /* max-width: 900px; Limit the width of the content */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
