@@ -543,3 +543,21 @@ body.show-content header {
     opacity: 0.7;
     transform: opacity 0.3s;
 }
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2.5s forwards; /* Adjust the timing as needed */
+
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+

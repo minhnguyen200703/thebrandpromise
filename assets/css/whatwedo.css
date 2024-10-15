@@ -497,11 +497,15 @@ justify-content: space-between; /* Push the .footer-brand to the bottom */
   transition: opacity 3s ease, transform 3s ease;
 }
 
+
+
 /* When elements are visible, slide them into place */
 .slide-up.active {
   opacity: 1;
   transform: translateY(0);
 }
+
+
 
 
 /* Back to Top Button Styling */
